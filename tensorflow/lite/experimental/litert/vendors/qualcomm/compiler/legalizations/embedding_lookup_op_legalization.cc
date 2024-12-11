@@ -97,7 +97,7 @@ LiteRtStatus EmbeddingLookupOpLegalization::LegalizeOp(
   LITERT_RETURN_STATUS_IF_QNN_NOT_OK(
       graph_mapper.Qnn().Api()->graphAddNode(graph_mapper.QnnGraph(), dest));
 
-  LITERT_LOG(LITERT_INFO, "Legalized embedding_lookup op", "");
+  LITERT_LOG(LITERT_INFO, "Legalized embedding_lookup op to QNN Gather op", "");
   return kLiteRtStatusOk;
 }
 
